@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="green">#23cf34</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_orange">#E47833</color>
+    <color name="lite_blue">#4E78A0</color>
+    <color name="blue">#0000FF</color>
+    <color name="gray">#FF909090</color>
+    <color name="dark_gray">#585858</color>
+    <color name="light_gray">#FFa8a8a8</color>
+    <color name="orange">#FFf5911f</color>
+    <color name="overlay_normal">#33000000</color>
+    <color name="overlay_semi_light">#22000000</color>
+    <color name="overlay_light">#18000000</color>
+    <color name="white_trans">#55ffffff</color>
+
+    <color name="white_trans1">#99FFFFFF</color>
+    <color name="white_trans2">#BBFFFFFF</color>
+
+    <color name="colorPrimary">#FF949698</color>
+    <color name="colorPrimaryDark">#FF767879</color>
+    <color name="colorPrimaryLight">#FFe6e7e9</color>
+
+    <color name="gray_color1">#FF333333</color>
+    <color name="gray_color2">#FF666666</color>
+    <color name="gray_color3">#FF999999</color>
+    <color name="gray_color4">#FFa8a8a8</color>
+    <color name="gray_color5">#FFbbbbbb</color>
+    <color name="gray_color6">#FFc8c8c8</color>
+    <color name="gray_color7">#FFdddddd</color>
+    <color name="gray_color8">#FFe3e3e3</color>
+    <color name="gray_color9">#FFf3f3f3</color>
+    <color name="gray_color10">#FFf6f5f5</color>
+    <color name="gray_color11">#FFfafbff</color>
+
+    <color name="splash_bg_color">#FFe6e7e9</color>
+    <color name="white_trans_color">#AAe6e7e9</color>
+
+    <color name="red_color1">#FFee3438</color>
+    <color name="red_color2">#FFd9232b</color>
+    <color name="red_color3">#FFeb1c24</color>
+
+    <color name="blue_color1">#FF2e3191</color>
+    <color name="blue_color2">#FF262979</color>
+
+    <color name="common_grey_text_color">#FF414142</color>
+
+    <color name="photo_thumbs_bg">#FF424244</color>
+</resources>

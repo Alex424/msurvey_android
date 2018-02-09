@@ -1,0 +1,55 @@
+<resources>
+
+    <dimen name="splash_image_margin">60dp</dimen>
+
+    <dimen name="custom_progress_corner">10dp</dimen>
+
+    <dimen name="main_logo_width">120dp</dimen>
+    <dimen name="main_mad_inc_logo_width">200dp</dimen>
+    <dimen name="main_info_icon_size">30dp</dimen>
+    <dimen name="main_info_round_corner_size">8dp</dimen>
+
+    <dimen name="main_info_content_padding">15dp</dimen>
+    <dimen name="main_info_content_text_size_large">18sp</dimen>
+    <dimen name="main_info_content_text_size_medium">14sp</dimen>
+    <dimen name="main_info_content_text_size_small">12sp</dimen>
+    <dimen name="main_info_content_text_margin1">5dp</dimen>
+    <dimen name="main_info_content_text_margin2">15dp</dimen>
+
+    <dimen name="main_btn_height">100dp</dimen>
+
+    <dimen name="dp_05">0.5dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_25">25sp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+
+    <dimen name="edit_box_height_small">35dp</dimen>
+
+    <dimen name="footer_height">60dp</dimen>
+
+    <dimen name="common_content_horizontal_padding">20dp</dimen>
+    <dimen name="common_header_height">60dp</dimen>
+    <dimen name="common_header_title_size">20sp</dimen>
+    <dimen name="common_header_subtitle_size">20sp</dimen>
+
+</resources>

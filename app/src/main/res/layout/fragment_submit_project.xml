@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingTop="@dimen/dp_8"
+                        android:text="@string/please_confirm_project_submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_header_subtitle_size"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txtProjectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="Project 001"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtProjectDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-06-24"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:id="@+id/txtProjectStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:text="Not Submitted"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_15" />
+
+                    <TextView
+                        android:id="@+id/txtBanksInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 Banks"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/txtLobbyInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 Lobby Panel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/txtHallLanternsInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Hall Lanterns"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/txtHallStationsInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Hall Stations"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/txtCopsInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4 COPs"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/txtCarInteriorsInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 Car Interiors"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+
+                    <TextView
+                        android:id="@+id/txtHallEntranceInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 Hall Entrances"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/btnSubmitProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grey_red_btn"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_25"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_25">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/submit_project_to_mad"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_indicator" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:background="@drawable/bg_shadow_header" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/common_content_horizontal_padding"
+        android:paddingRight="@dimen/common_content_horizontal_padding"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_navbtn_round"
+            android:drawableLeft="@drawable/ic_grey_left_indicator"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:text="@string/back"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+</LinearLayout>

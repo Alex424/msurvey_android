@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lstSurveys"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/white"
+            android:dividerHeight="@dimen/dp_1"
+            android:listSelector="@color/transparent">
+
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:background="@drawable/bg_shadow_header" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/common_content_horizontal_padding"
+        android:paddingRight="@dimen/common_content_horizontal_padding"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_navbtn_round"
+            android:drawableLeft="@drawable/ic_grey_left_indicator"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:text="@string/back"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+</LinearLayout>

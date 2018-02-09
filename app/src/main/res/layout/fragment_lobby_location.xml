@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="Lobby Panel 1 of N"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_header_subtitle_size"
+                    android:textStyle="italic"
+                    android:tag="@string/edit_subtitle_hidden_tag"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white"
+                    android:tag="@string/edit_subtitle_hidden_tag"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_10"
+                    android:text="@string/location"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_20" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/btnCACFRoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grey_red_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_25"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_25">
+
+                    <CheckBox
+                        android:id="@+id/chkCACFRoom"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:background="@drawable/ic_checkbox"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/lobby_location_cacf_room"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/btnFireRecallPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grey_red_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_25"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_25">
+
+                    <CheckBox
+                        android:id="@+id/chkFireRecallPanel"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:background="@drawable/ic_checkbox"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/lobby_location_fire_recall_panel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/btnSecurityDesk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grey_red_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_25"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_25">
+
+                    <CheckBox
+                        android:id="@+id/chkSecurityDesk"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:background="@drawable/ic_checkbox"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:duplicateParentState="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:gravity="center_vertical"
+                        android:text="@string/lobby_location_security_desk"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btnOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_grey_red_btn"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_25"
+                        android:paddingLeft="@dimen/common_content_horizontal_padding"
+                        android:paddingRight="@dimen/common_content_horizontal_padding"
+                        android:paddingTop="@dimen/dp_25">
+
+                        <CheckBox
+                            android:id="@+id/chkOther"
+                            android:layout_width="@dimen/dp_25"
+                            android:layout_height="@dimen/dp_25"
+                            android:background="@drawable/ic_checkbox"
+                            android:button="@null"
+                            android:clickable="false"
+                            android:duplicateParentState="true" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_15"
+                                android:gravity="center_vertical"
+                                android:text="@string/lobby_location_other"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp_20" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtOtherName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginBottom="@dimen/dp_25"
+                        android:layout_marginLeft="@dimen/dp_60"
+                        android:layout_marginRight="@dimen/common_content_horizontal_padding"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/bg_editbox_round"
+                        android:gravity="left|top"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5"
+                        android:singleLine="true"
+                        android:textColor="@color/common_grey_text_color"
+                        android:textSize="@dimen/sp_18"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:background="@drawable/bg_shadow_header" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/common_content_horizontal_padding"
+        android:paddingRight="@dimen/common_content_horizontal_padding"
+        android:paddingTop="@dimen/dp_8"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_navbtn_round"
+            android:drawableLeft="@drawable/ic_grey_left_indicator"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:text="@string/back"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_navbtn_round"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@drawable/ic_grey_right_indicator"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="@string/next"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/sp_18"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

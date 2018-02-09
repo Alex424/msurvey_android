@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="Bank X - Description"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_header_subtitle_size"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_8">
+
+                    <TextView
+                        android:id="@+id/txtFloorIdentifier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Floor 1 of N - Floor Identifier"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20" />
+
+                    <TextView
+                        android:id="@+id/txtLanternPINo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center_vertical"
+                        android:text="Lantern / PI  - 1 of N"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_18"
+                        android:tag="@string/edit_subtitle_hidden_tag" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="@string/lantern_operation_desc"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_20" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/btnUnique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grey_red_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_25"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_25">
+
+                    <CheckBox
+                        android:id="@+id/chkUnique"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:background="@drawable/ic_checkbox"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:duplicateParentState="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:gravity="center_vertical"
+                            android:text="@string/hall_station_operation_unique"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_25" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/btnSameAsLast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grey_red_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_15">
+
+                    <CheckBox
+                        android:id="@+id/chkSameAsLast"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:background="@drawable/ic_checkbox"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:duplicateParentState="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/hall_station_same_as_last"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_25" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_3"
+                            android:gravity="center_vertical"
+                            android:text="@string/lantern_same_as_last_desc"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_18" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/btnSameAsExisting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grey_red_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_15"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_15">
+
+                    <CheckBox
+                        android:id="@+id/chkSameAsExisting"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:background="@drawable/ic_checkbox"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:duplicateParentState="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/hall_station_same_as"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_25" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_3"
+                            android:gravity="center_vertical"
+                            android:text="@string/lantern_same_as_existing_desc"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_18" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:background="@drawable/bg_shadow_header" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/common_content_horizontal_padding"
+        android:paddingRight="@dimen/common_content_horizontal_padding"
+        android:paddingTop="@dimen/dp_8"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_navbtn_round"
+            android:drawableLeft="@drawable/ic_grey_left_indicator"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:text="@string/back"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_navbtn_round"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@drawable/ic_grey_right_indicator"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="@string/next"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/sp_18"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

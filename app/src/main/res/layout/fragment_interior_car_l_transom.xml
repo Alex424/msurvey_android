@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_common_scroll_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/contentScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_8"
+                    android:text="Bank X - Description"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_header_subtitle_size"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp_8"
+                    android:paddingLeft="@dimen/common_content_horizontal_padding"
+                    android:paddingRight="@dimen/common_content_horizontal_padding"
+                    android:paddingTop="@dimen/dp_8">
+
+                    <LinearLayout
+                        android:id="@+id/layoutPromptTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtCarNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="Car 1 of N - Car Number"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_20" />
+
+                        <TextView
+                            android:id="@+id/txtDoorDirection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:paddingTop="@dimen/dp_5"
+                            android:text="@string/interior_car_front_l_transom"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_18" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:paddingLeft="@dimen/common_content_horizontal_padding"
+                        android:paddingRight="@dimen/common_content_horizontal_padding"
+                        android:paddingTop="@dimen/dp_10">
+
+                        <TextView
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:gravity="center_vertical"
+                            android:text="@string/interior_car_width"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_18" />
+
+                        <EditText
+                            android:id="@+id/edtWidth"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_box_height_small"
+                            android:background="@drawable/bg_editbox_round"
+                            android:gravity="center_vertical"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:nextFocusDown="@+id/edtHeight"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:paddingRight="@dimen/dp_10"
+                            android:textColor="@color/common_grey_text_color"
+                            android:textSize="@dimen/sp_18" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:paddingLeft="@dimen/common_content_horizontal_padding"
+                        android:paddingRight="@dimen/common_content_horizontal_padding"
+                        android:paddingTop="@dimen/dp_10">
+
+                        <TextView
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:gravity="center_vertical"
+                            android:text="@string/interior_car_height"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp_18" />
+
+                        <EditText
+                            android:id="@+id/edtHeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_box_height_small"
+                            android:background="@drawable/bg_editbox_round"
+                            android:gravity="center_vertical"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:paddingRight="@dimen/dp_10"
+                            android:textColor="@color/common_grey_text_color"
+                            android:textSize="@dimen/sp_18" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:background="@drawable/bg_shadow_header" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/common_content_horizontal_padding"
+        android:paddingRight="@dimen/common_content_horizontal_padding"
+        android:paddingTop="@dimen/dp_8">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_navbtn_round"
+            android:drawableLeft="@drawable/ic_grey_left_indicator"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:text="@string/back"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/sp_18" />
+
+        <com.mad.survey.libs.ClickEffectImageView
+            android:id="@+id/btnHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_help_red_btn" />
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_navbtn_round"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@drawable/ic_grey_right_indicator"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="@string/next"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/sp_18" />
+
+    </RelativeLayout>
+
+</LinearLayout>

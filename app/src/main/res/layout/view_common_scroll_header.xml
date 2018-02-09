@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_header_height"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/common_content_horizontal_padding"
+    android:paddingRight="@dimen/common_content_horizontal_padding">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtHeaderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="MAD Survey Setup"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="@dimen/common_header_title_size"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/txtHeaderSubTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:gravity="center_vertical"
+            android:text="Hall Entrance"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtHeaderSubTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:gravity="center_vertical"
+            android:text="Transom Measurements"
+            android:textColor="@color/common_grey_text_color"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.mad.survey.libs.ClickEffectImageView
+        android:id="@+id/imgMADLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_header_logo" />
+
+</LinearLayout>
